@@ -1,29 +1,41 @@
-/* цвет основного текста  #212121; */
-/* вторичный текст серый <p>, мейл+тел #757575; */
-/* адрес прозрачность rgba(255, 255, 255, 0.6); */
-/* цвет основной надписи белый H1  #FFFFFF; */
-/*  акцент голубой #2196F3; */
-/*  вторичный темно-серый background  #2F303A; */
-/*  вторичный белый background (шапка) #FFFFFF; */
+/* ++цвет основного текста  #212121; */
+/* ++вторичный текст серый <p>, мейл+тел #757575; */
+/*++ адрес прозрачность rgba(255, 255, 255, 0.6); */
+/* ++цвет основной надписи белый H1  #FFFFFF; */
+/* ++ акцент голубой #2196F3; */
+/* ++ вторичный темно-серый background  #2F303A; */
+/*  ++вторичный белый background (шапка) #FFFFFF; */
 /*  вторичный почти белый background #F5F4FA; */
-/*  основной background  бело-серый #E5E5E5; */
+/*  ++основной background  бело-серый #E5E5E5; */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --transparent-gray: rgba(255, 255, 255, 0.6);
+  --white-hero-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-background-wg: #e5e5e5;
+  --secondary-bgc-gray: #2f303a;
+  --secondary-bgc-white: #ffffff;
+  --secondary-bgc-halfwhite: #f5f4fa;
+}
 
 .page {
-  background-color: #e5e5e5;
-  color: #212121;
+  background-color: var(--primary-background-wg);
+  color: var(--primary-text-color);
 }
 
 /* стилизация хедер */
 .header {
-  background-color: #ffffff;
+  background-color: var(--white-hero-color);
 }
 
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo-studio {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .list {
@@ -32,26 +44,56 @@
 
 /* навигация сайта */
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .site-nav .active:hover,
 .site-nav .active:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .list .address {
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .list .active:hover,
 .list .active:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Hero */
+.hero {
+  background-color: var(--secondary-bgc-gray);
+}
 
 /* секция */
+.section {
+  background-color: var(--primary-background-wg);
+}
+
+.bgc {
+  background-color: var(--secondary-bgc-halfwhite);
+}
+
 .section-title {
-  color: #212121;
+  color: var(--primary-text-color);
+}
+
+.features .section-list {
+  color: var(--primary-text-color);
+}
+
+.features .content {
+  color: var(--secondary-text-color);
+}
+
+/* Button */
+.button {
+  color: var(--white-hero-color);
+  background-color: var(--accent-color);
+}
+
+/* footer */
+.footer {
+  background-color: var(--secondary-bgc-gray);
 }
