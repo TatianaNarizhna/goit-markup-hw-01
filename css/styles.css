@@ -1,1 +1,57 @@
 /* цвет основного текста  #212121; */
+/* вторичный текст серый <p>, мейл+тел #757575; */
+/* адрес прозрачность rgba(255, 255, 255, 0.6); */
+/* цвет основной надписи белый H1  #FFFFFF; */
+/*  акцент голубой #2196F3; */
+/*  вторичный темно-серый background  #2F303A; */
+/*  вторичный белый background (шапка) #FFFFFF; */
+/*  вторичный почти белый background #F5F4FA; */
+/*  основной background  бело-серый #E5E5E5; */
+
+.page {
+  background-color: #e5e5e5;
+  color: #212121;
+}
+
+/* стилизация хедер */
+.header {
+  background-color: #ffffff;
+}
+
+.logo {
+  color: #2196f3;
+}
+
+.logo-studio {
+  color: #212121;
+}
+
+.list {
+  list-style: none;
+}
+
+/* навигация сайта */
+.site-nav .link {
+  color: #212121;
+}
+
+.site-nav .active:hover,
+.site-nav .active:focus {
+  color: #2196f3;
+}
+
+.list .address {
+  color: #757575;
+}
+
+.list .active:hover,
+.list .active:focus {
+  color: #2196f3;
+}
+
+/* Hero */
+
+/* секция */
+.section-title {
+  color: #212121;
+}
