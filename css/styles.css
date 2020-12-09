@@ -23,6 +23,8 @@
 .page {
   background-color: var(--primary-background-wg);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* стилизация хедер */
@@ -30,8 +32,12 @@
   background-color: var(--white-hero-color);
 }
 
+/* Logo */
 .logo {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
 .logo-studio {
@@ -45,6 +51,10 @@
 /* навигация сайта */
 .site-nav .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .active:hover,
@@ -54,6 +64,10 @@
 
 .list .address {
   color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.02em;
 }
 
 .list .active:hover,
